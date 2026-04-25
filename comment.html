@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comments Page</title>
+        <link rel="stylesheet" href="websystems.css">
+    </head>
+    <body>
+        <audio id="bgm" controls autoplay loop>
+            <source src="bgm.mp3" type="audio/mp3">
+        </audio>
+        <h1>Comments Page</h1>
+        <nav class="menu">
+        <a href="index.html">Home Page</a>
+        <a href="past.html">My Past</a>
+        <a href="future.html">My Future</a>
+        <a href="comments.html">Comments</a>
+        </nav>
+        <h2>Technical</h2>
+        <h3>Overall Structure</h3>
+        <img src="images/img8.png" alt="overall diagram" class="diagram">
+        <ul class= "ul1">
+            <li>Home page: introduces who I am.</li>
+            <li>Past page: explains my background and past experience.</li>
+            <li>Future page: describes my career goal and future plans.</li>
+            <li>Comments page: explains the design and structure of the site.</li>
+            <li>websystems.css: the external stylesheet used for layout, colours, fonts, and spacing across all pages.</li>
+        </ul>
+        <p>
+            All pages are connected through the same navigation menu, which allows users to move easily between the home, past, future, and comments pages without relying on the browser back button. All pages also use the same external stylesheet, which helps keep the design consistent across the website.
+        </p>
+        <h2>Internal Structure</h2>
+        <img src="images/img7.png" alt="Internal diagram" class="diagram">
+        <h3>Common Page Structure</h3>
+        <p>
+            All pages in my website follow a similar internal structure. At the top of each page, there is a
+            <span>header</span> created by the main heading (`h1`), which clearly shows the page title. Directly
+            below the header, I placed the same navigation <span>menu</span> so that users can move between pages in a
+            consistent way. Under the menu, the main <span>content section</span> is arranged using <span>paragraphs, headings,
+            lists, tables, images, and div containers</span> depending on the purpose of the page. For example, some
+            pages use div containers to group related content, while the past page uses a table to organise
+            school information clearly. At the bottom of every page, there is a footer that provides a
+            consistent ending to the layout. This repeated use of a header, menu, content section, and footer
+            helps make the website easier to understand and gives all pages a unified structure.
+        </p>
+        <h3>index.html</h3>
+        <p>
+            <span>index.html</span> is designed as the home page of the website. Its main content is made up of
+            several introduction paragraphs that present who I am, my background, and my interests. It also includes
+            a travel section with a <span>subheading</span>, a <span>list</span> of memorable countries, and an image placed beside the list
+            using a <span>div container</span>. Another section called <span>My Favourite Things</span> is included to show more
+            personal interests, and this section uses a <span>background image</span> to make it more decorative and visually distinct.    
+        </p>  
+        <h3>past.html</h3>
+        <p>
+            <span>past.html</span> is structured to present my educational background and earlier personal development.
+            The page includes a short introduction paragraph followed by a <span>table</span> that organises the schools I attended,
+            their logos, the stage of education, the time period, and my past dreams. This table combines both text and
+            images to present the information clearly. Below the table, I added a longer reflective paragraph to explain
+            how my earlier experiences and interests influenced my current studies.
+        </p>
+        <h3>future.html</h3>
+        <p>
+            <span>future.html</span> is organised into several content sections that explain my future career goal in
+            detail. The main content uses multiple headings from <span>h2</span> to <span>h6</span> to divide the page
+            into smaller sections, including what a quantitative trader is, why I became interested in this career,
+            the skills I want to develop, my long-term goals and plans, and my short-term goals. A <span>list</span> is also used
+            to present important skills clearly and make the information easier to read.
+        </p>
+        <h3>comments.html</h3>
+        <p>
+            <span>comments.html</span> is structured as an explanatory and analytical page rather than a personal content page.
+            Its content is divided into clearly labelled sections with <span>headings and subheadings</span>, including overall structure,
+            internal structure, styles used, graphic design, alt text, accessibility, and how the website works without CSS.
+            It also includes <span>diagram images</span> to visually explain the website structure and a <span>table</span> in the styles section to
+            organise CSS information more clearly. This makes the page more informative and helps explain both the technical
+            structure and design choices of the website.
+        </p>
+        <h2>Styles Used</h2>
+        <table id="table" border="1">
+            <tr>
+                <th>Selector</th>
+                <th>Type</th>
+                <th>Where Used</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>Element selector</td>
+                <td>All pages</td>
+                <td>Sets the main font, removes the default margin, and applies the overall background colour.</td>
+            </tr>
+            <tr>   
+                <td>h1</td>
+                <td>Element selector</td>
+                <td>All pages</td>    
+                <td>Styles the main page heading with a large font, dark background, and centred alignment.</td>
+            </tr>
+            <tr>
+                <td>.menu</td>
+                <td>Class selector</td>
+                <td>All pages</td>
+                <td>Creates a centred navigation menu using flexbox.</td>
+            </tr>
+            <tr>
+                <td>.container</td>
+                <td>Class selector</td>
+                <td>Home page</td>
+                <td>Places the travel list and image side by side.</td>
+            </tr>
+            <tr>
+                <td>.travel-img</td>
+                <td>Class selector</td>
+                <td>Home page</td>
+                <td>Modify the size of the travel image.</td>
+            </tr>
+            <tr>
+                <td>.school-img</td>
+                <td>Class selector</td>
+                <td>Past page</td>
+                <td>Keeps all the school logo images the same size.</td>
+            </tr>
+            <tr>
+                <td>#table</td>
+                <td>ID selector</td>
+                <td>Past page</td>
+                <td>Centres and styles the school table.</td>
+            </tr>
+            <tr>
+                <td>.ul1, .ul2, .ul3</td>
+                <td>Class selector</td>
+                <td>Different pages</td>
+                <td>Different styles to the lists depending on the section.</td>
+            </tr>
+            <tr>
+                <td>span</td>
+                <td>Element selector</td>
+                <td>Home page and Future pages</td>
+                <td>Highlights important words.</td>
+            </tr>
+            <tr>
+                <td>footer</td>
+                <td>Element selector</td>
+                <td>All pages</td>
+                <td>Creates a footer at the bottom of each page.</td>
+            </tr>
+            <tr>
+                <td>#bgm</td>
+                <td>ID selector</td>
+                <td>All pages</td>
+                <td>Positions the background music player at the bottom-right of the screen.</td>
+            </tr>
+            <tr>
+                <td>.fav</td>
+                <td>Class selector</td>
+                <td>Home page</td>
+                <td>A background image for the favourite things section.</td>
+            </tr>
+        </table>
+        <h2>Graphic Design</h2>
+        <h3>Aesthetics</h3>
+        <p>
+            The overall graphic design of the website focuses on a soft, personal, and consistent appearance.
+            I wanted the website to feel warm and friendly rather than formal or complicated.
+            Therefore, I used a simple multi-page layout with the same heading, navigation menu, and footer structure across all pages and I avoided adding too many decorative effects to be clear.
+        </p>
+        <h3>Colour</h3>
+        <p>
+            I mainly used pink and brown tones throughout the website to create a warm and visually consistent theme. 
+            Pink is my favourite colour, so I wanted it to be one of the main colours in the design and to reflect 
+            my personal taste. The lighter pink backgrounds help make the pages feel soft and personal, while the 
+            darker brown colour is used for headings, borders, and important text to create contrast. 
+        </p>
+        <h3>Font / Typography</h3>
+        <p>
+            The main page titles use a bold display-style font so that they stand out clearly and immediately show the main topic of each page. 
+            For the body text, I used a more traditional serif font to keep the paragraphs readable. I also used bold text in selected places, such as with the span element, to highlight important words without changing the style of the whole paragraph.
+        </p>
+        <h3>Layout/Interactivity</h3>
+        <p>I tried to keep the layout simple and structured by placing the main heading at the top, followed by a centred navigation menu, the main content sections, and a footer at the bottom of each page. I used the same top-down layout on all pages to make navigation predictable and to keep the site visually consistent. On the home page, I used a flexbox layout to place the travel list and image side by side so that the section feels more balanced visually. I also used hover effects on the navigation links to make the menu feel more interactive. In addition, I included background music to make the website feel more personal, and I fixed the audio player to the bottom-right corner so that it remains visible and accessible while the user moves through the site.</p>
+        <h2>Alt Text</h2>
+        <p>I used clear alt text for the images in my website to make their meaning understandable even without the visuals. For example, on the home page, my travel photo uses the alt text “A traveling picture.” On the past page, the logos in my school table use alt text such as “WonderLand Kindergarten logo,” “Seorae elementary school logo,” “Sehwa middle school logo,” “Sehwa high school logo,” and “UTS logo.” By using these descriptions, I made sure that the images still provide information even if they cannot be seen.</p>
+        <h2>Accessibility</h2>
+        <p>My website has been designed to be accessible to as many users as possible. All images include alt text, such as "A traveling picture" and "UTS logo", so that users who cannot see images can still understand the content.</p>
+        <p>I used clear colour contrast between text and background, such as brown text on a light pink background, to make the content easy to read. The headings are large and clearly separated from the main body text, which helps users understand the structure of each page more easily. The navigation menu is simple, so users can easily understand the structure of the website.</p>
+        <P>I also considered readability by using body text that is large enough to read comfortably and by adding spacing and padding between sections. This helps users with visual difficulties and users on smaller screens The layout uses standard HTML elements such as headings, paragraphs, lists, and tables, so the content remains understandable.</P>
+        <h2>How the Site Works Without CSS</h2>
+        <p>
+            When CSS is turned off, my website loses its visual design, but it still remains usable because the content is structured with standard HTML elements. The navigation menu still works, the headings and paragraphs remain in order, and the lists and tables still show information clearly. The alt text for images also helps users understand image content even without the visual design.
+        </p>
+
+        <footer>
+                31268 Web Systems Assignment | UTS | Autumn Semester 2026 | Hannah Yoo | 25523123
+        </footer>
+    </body>
+</html>
