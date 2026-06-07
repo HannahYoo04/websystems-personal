@@ -1,72 +1,141 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Past Page</title>
-        <link rel="stylesheet" href="websystems.css">
-    </head>
-    <body>
-        <audio id="bgm" controls autoplay loop>
-            <source src="bgm.mp3" type="audio/mp3">
-        </audio>
-        <h1>My Past</h1>
-        <nav class="menu">
-            <a href="index.html">Home Page</a>
-            <a href="past.html">My Past</a>
-            <a href="future.html">My Future</a>
-            <a href="comments.html">Comments</a>
-        </nav>
-        <h2>Schools</h2>
-        <p>The table below shows the schools I attended and some of the dreams I had during each stage of my education.</p>
-        <table id="table" border="1">
-            <tr>
-                <th>School</th>
-                <th>Logo</th>
-                <th>Stage</th>
-                <th>Period</th> 
-                <th>Past Dream</th> 
-            </tr>
-            <tr>
-                <td>WonderLand Kindergarten</td>
-                <td><img src="img2.png" alt="WonderLand Kindergarten logo" class="school-img"></td>
-                <td>Kindergarten</td>
-                <td>2008-2010</td>
-                <td>Doctor</td>
-            </tr>
-            <tr>
-                <td>Seorae elementary school</td>
-                <td><img src="img3.png" alt="Seorae elementary school logo" class="school-img"></td>
-                <td>Primary School</td>
-                <td>2011-2016</td>
-                <td>Swimmer</td>
-            </tr>
-            <tr>
-                <td>Sehwa middle school</td>
-                <td><img src="img4.png" alt="Sehwa middle school logo" class="school-img"></td>
-                <td>Middle School</td>
-                <td>2017-2019</td>
-                <td>Kpop Idol</td>
-            </tr>
-            <tr>
-                <td>Sehwa high school</td>
-                <td><img src="img5.png" alt="Sehwa high school logo" class="school-img"></td>
-                <td>High School</td>
-                <td>2020-2022</td>
-                <td>Veterinarian</td>
-            </tr>
-            <tr>
-                <td>UTS</td>
-                <td><img src="img6.png" alt="UTS logo" class="school-img"></td>
-                <td>University</td>
-                <td>2024-Present</td>
-                <td>Quantitative Trader</td>
-            </tr>
-        </table>
-        <h2>My Background and Interests</h2>
-        <p>From a young age, I was an energetic student who was passionate about learning.
-            I was exposed to English early because I attended an English kindergarten and later studied English in the United States, which led me to dream of studying abroad. When I was younger, I was especially interested in arts and sports. I was a swimmer and won many competitions, and I also enjoyed playing the piano because of my mother’s influence.</p>
-             <p>As I grew older, however, I started to think more realistically about my future career. After learning Python in high school and being influenced by my father, I chose to study Artificial Intelligence.</p>
-        <footer>
-            31268 Web Systems Assignment | UTS | Autumn Semester 2026 | Hannah Yoo | 25523123 
-        </footer>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Yoo — My Past</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Hannah <span>Yoo</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="past.html" class="active">My Past</a></li>
+    <li><a href="future.html">My Future</a></li>
+    <li><a href="comments.html">Comments</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Looking back</p>
+      <h1 class="hero-title">My <em>Past</em></h1>
+      <p class="hero-desc">From kindergarten dreams to university ambitions — a journey shaped by curiosity, sport, and a love of learning.</p>
+    </div>
+  </section>
+
+  <!-- SCHOOLS TABLE -->
+  <div class="section fade-in">
+    <p class="section-tag">Education</p>
+    <h2 class="section-title">Schools I Attended</h2>
+    <p class="section-body" style="margin-bottom: 1.75rem;">The table below shows the schools I attended and some of the dreams I had during each stage of my education.</p>
+
+    <div class="school-table-wrap">
+      <table class="school-table">
+        <thead>
+          <tr>
+            <th>School</th>
+            <th>Logo</th>
+            <th>Stage</th>
+            <th>Period</th>
+            <th>Past Dream</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>WonderLand Kindergarten</strong></td>
+            <td><img src="https://hannahyoo04.github.io/websystems-personal/img2.png" alt="WonderLand Kindergarten logo" class="school-logo"></td>
+            <td><span class="pill">Kindergarten</span></td>
+            <td>2008 – 2010</td>
+            <td><span class="dream-pill">Doctor</span></td>
+          </tr>
+          <tr>
+            <td><strong>Seorae Elementary School</strong></td>
+            <td><img src="https://hannahyoo04.github.io/websystems-personal/img3.png" alt="Seorae elementary school logo" class="school-logo"></td>
+            <td><span class="pill">Primary School</span></td>
+            <td>2011 – 2016</td>
+            <td><span class="dream-pill">Swimmer</span></td>
+          </tr>
+          <tr>
+            <td><strong>Sehwa Middle School</strong></td>
+            <td><img src="https://hannahyoo04.github.io/websystems-personal/img4.png" alt="Sehwa middle school logo" class="school-logo"></td>
+            <td><span class="pill">Middle School</span></td>
+            <td>2017 – 2019</td>
+            <td><span class="dream-pill">Kpop Idol</span></td>
+          </tr>
+          <tr>
+            <td><strong>Sehwa High School</strong></td>
+            <td><img src="https://hannahyoo04.github.io/websystems-personal/img5.png" alt="Sehwa high school logo" class="school-logo"></td>
+            <td><span class="pill">High School</span></td>
+            <td>2020 – 2022</td>
+            <td><span class="dream-pill">Veterinarian</span></td>
+          </tr>
+          <tr>
+            <td><strong>UTS</strong></td>
+            <td><img src="https://hannahyoo04.github.io/websystems-personal/img6.png" alt="UTS logo" class="school-logo"></td>
+            <td><span class="pill">University</span></td>
+            <td>2024 – Present</td>
+            <td><span class="dream-pill">Quantitative Trader</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- BACKGROUND -->
+  <div class="section fade-in">
+    <p class="section-tag">Background</p>
+    <h2 class="section-title">My Background &amp; Interests</h2>
+    <div class="two-col">
+      <div class="section-body">
+        <p>From a young age, I was an energetic student who was passionate about learning. I was exposed to English early because I attended an English kindergarten and later studied English in the United States, which led me to dream of studying abroad.</p>
+        <p>When I was younger, I was especially interested in arts and sports. I was a swimmer and won many competitions, and I also enjoyed playing the piano because of my mother's influence.</p>
+      </div>
+      <div class="section-body">
+        <p>As I grew older, however, I started to think more realistically about my future career. After learning Python in high school and being influenced by my father, I chose to study Artificial Intelligence.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <strong>31268 Web Systems Assignment</strong> &nbsp;|&nbsp; UTS &nbsp;|&nbsp; Autumn Semester 2026 &nbsp;|&nbsp; Hannah Yoo &nbsp;|&nbsp; 25523123
+</footer>
+
+<!-- BGM -->
+<div class="bgm-player" onclick="toggleBgm()">
+  <button class="bgm-btn" id="bgmBtn" aria-label="Toggle background music">♪</button>
+  <span class="bgm-label" id="bgmLabel">BGM</span>
+</div>
+<audio id="bgmAudio" loop>
+  <source src="https://hannahyoo04.github.io/websystems-personal/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  let playing = false;
+  function toggleBgm() {
+    const audio = document.getElementById('bgmAudio');
+    const btn = document.getElementById('bgmBtn');
+    const label = document.getElementById('bgmLabel');
+    if (playing) {
+      audio.pause(); btn.textContent = '♪'; label.textContent = 'BGM'; playing = false;
+    } else {
+      audio.play(); btn.textContent = '■'; label.textContent = 'Playing'; playing = true;
+    }
+  }
+</script>
+</body>
 </html>
